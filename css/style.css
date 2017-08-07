@@ -758,8 +758,12 @@ a,p {
 	color:#39395C;
 	text-shadow: 1px 1px 3px #ccc;
 }
-.dodoenia-container h2 a {
+.img_hid {
 	display:none;
+	cursor:pointer;
+	font-size:0.5em;
+	color: blue;
+	text-decoration:none;
 }
 
 .dodoenia-img {
@@ -1092,11 +1096,9 @@ transition:all 0.5s ease;
 	.dodoenia-container {
 		text-indent:5px;
 	}
-	.dodoenia-container h2 a {
-	display:block;
-	font-size:0.5em;
-	color: blue;
-	text-decoration:none;
+	.img_hid {
+		display:block;
+		
 	}
 	.dodoenia-img {
 		width:0;
