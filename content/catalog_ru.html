@@ -46,6 +46,24 @@
 				<span><a href="#">by</a></span>
 		</div>
 	</div>
+	<ul class="drop_menu">
+	    <li>
+		    <a href=#>
+			    <div class="strings">
+				    <span></span>
+				    <span></span>
+				    <span></span>
+			    </div>
+		    </a>
+	        <ul class="submenu">
+	            <li><a href="../index.html" title="На главную">Главная</a></li>
+				<li><a href="../index.html" title="Преимущества">Преимущества</a></li>
+				<li title="Каталог"><a href="catalog_ru.html">Каталог продукции</a></li>
+				<li><a href="certif_ru.html" title="Сертификаты">Сертификаты</a></li>
+				<li><a href="javascript://0" onclick="slowScroll('#contact')" title="Контакты">Контакты</a></li>
+	        </ul>
+	    </li>
+	</ul>
 	<div class="nav-logo">
 		<div class="rotation-container" title="ООО СмартХим">
 			<div class="circle"></div>
@@ -62,17 +80,40 @@
 		</div>
 	</div>
 	<div class="product-nav">
-		<ul class="product-nav-one">
-			<li><a href="javascript://0" onclick="slowScroll('#pre')">Ultramil Pre</a></li>
-			<li><a href="javascript://0" onclick="slowScroll('#foam')">Ultramil Foam</a></li>
-			<li><a href="javascript://0" onclick="slowScroll('#before')">Ultramil Before</a></li>
+		<ul class="product_drop_menu" id="menu">
+		    <li>
+			    <a href="#menu">
+				    <div class="strings">
+					    <span></span>
+					    <span></span>
+					    <span></span>
+				    </div>
+				    <p>Список продуктов</p>
+			    </a>
+		        <ul class="submenu">
+		            <li><a href="javascript://0" onclick="slowScroll('#pre')">Ultramil Pre</a></li>
+					<li><a href="javascript://0" onclick="slowScroll('#foam')">Ultramil Foam</a></li>
+					<li><a href="javascript://0" onclick="slowScroll('#before')">Ultramil Before</a></li>
+					<li><a href="javascript://0" onclick="slowScroll('#jod')">Ultramil JOD</a></li>
+					<li><a href="javascript://0" onclick="slowScroll('#blue')">Ultramil Blue</a></li>
+					<li><a href="javascript://0" onclick="slowScroll('#green')">Ultramil Green</a></li>
+		        </ul>
+		    </li>
 		</ul>
-		<ul class="product-nav-two">
-			<li><a href="javascript://0" onclick="slowScroll('#jod')">Ultramil JOD</a></li>
-			<li><a href="javascript://0" onclick="slowScroll('#blue')">Ultramil Blue</a></li>
-			<li><a href="javascript://0" onclick="slowScroll('#green')">Ultramil Green</a></li>
-		</ul>
+		<div class="nav_position">
+			<ul class="product-nav-one">
+				<li><a href="javascript://0" onclick="slowScroll('#pre')">Ultramil Pre</a></li>
+				<li><a href="javascript://0" onclick="slowScroll('#foam')">Ultramil Foam</a></li>
+				<li><a href="javascript://0" onclick="slowScroll('#before')">Ultramil Before</a></li>
+			</ul>
+			<ul class="product-nav-two">
+				<li><a href="javascript://0" onclick="slowScroll('#jod')">Ultramil JOD</a></li>
+				<li><a href="javascript://0" onclick="slowScroll('#blue')">Ultramil Blue</a></li>
+				<li><a href="javascript://0" onclick="slowScroll('#green')">Ultramil Green</a></li>
+			</ul>		
+		</div>
 	</div>
+
 	<div class="products">
 		<div class="products-container">
 		<span class="products-name">Каталог продукции</span>
@@ -94,7 +135,7 @@
 								</span>
 								<span class="tab-cont">
 									<span class="download-instr">
-										<a href="#"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
+										<a href="../download/Pre.pdf"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
 									</span><br><br>
 									<h5>Назначение:</h5>
 									<p>Средство моющее «Ultramil» Pre – высококонцентрированное средство на основе молочной кислоты, мягких ПАВ и глицерина, предназначенное для обработки вымени перед доением с целью удаления загрязнений с поверхности кожи, основания вымени и сосков, контактирующих в дальнейшем, в процессе доения коров, с сосковой резиной. Рекомендуется для регулярной санитарной обработки сосков вымени перед надеванием на них стаканов доильного аппарата.</p><br>
@@ -131,7 +172,7 @@
 							<span class="tab-cont">
 								<span class="download-instr">
 										<a href="../img/Cert Pre.jpg" download><img src="../img/vniz1.png"/> Скачать СГР</a>
-								</span><br><br>
+								</span><br>
 								<a href="../img/Cert Pre.jpg" data-fancybox="gallery_1">
 									<img src="../img/SGR Pre.png" title="Ultramil Pre" alt="Image unavaliable"/>
 								</a>
@@ -155,7 +196,7 @@
 								</span>
 								<span class="tab-cont">
 								<span class="download-instr">
-										<a href="#"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
+										<a href="../download/Foam.pdf"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
 									</span><br><br>
 									<h5>Назначение:</h5>
 									<p>Средство моющее «Ultramil» марки Foam – готовое к применению средство на основе хлоргексидина биглюконата, мягких ПАВ, эмолентов и глицерина, предназначенное для обработки вымени перед доением с целью удаления загрязнений с поверхности кожи, основания вымени и сосков, контактирующих в дальнейшем, в процессе доения коров, с сосковой резиной. Рекомендуется для регулярной санитарной обработки сосков вымени перед надеванием на них стаканов доильного аппарата.</p>
@@ -192,7 +233,7 @@
 							<span class="tab-cont">
 								<span class="download-instr">
 										<a href="../img/Cert Foam.jpg" download><img src="../img/vniz1.png"/> Скачать СГР</a>
-								</span><br><br>
+								</span><br>
 								<a href="../img/Cert Foam.jpg" data-fancybox="gallery_1">
 									<img src="../img/SGR Foam.png" title="Ultramil Foam" alt="Image unavaliable"/>
 								</a>
@@ -216,7 +257,7 @@
 								</span>
 								<span class="tab-cont">
 								<span class="download-instr">
-										<a href="#"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
+										<a href="../download/Before.pdf"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
 									</span><br><br>
 									<h5>Назначение:</h5>
 									<p>Средство моющее «Ultramil» марки Before – концентрированное средство на основе хлоргексидина биглюконата, мягких ПАВ, эмолентов и глицерина, предназначенное для обработки вымени перед доением с целью удаления загрязнений с поверхности кожи, основания вымени и сосков, контактирующих в дальнейшем, в процессе доения коров, с сосковой резиной. Рекомендуется для регулярной санитарной обработки сосков вымени перед надеванием на них стаканов доильного аппарата.</p>
@@ -253,7 +294,7 @@
 							<span class="tab-cont">
 								<span class="download-instr">
 										<a href="../img/Cert Before.jpg" download><img src="../img/vniz1.png"/> Скачать СГР</a>
-								</span><br><br>
+								</span><br>
 								<a href="../img/Cert Before.jpg" data-fancybox="gallery_1">
 									<img src="../img/SGR Before.png" title="Ultramil Before" alt="Image unavaliable"/>
 								</a>
@@ -281,7 +322,7 @@
 								</span>
 								<span class="tab-cont">
 								<span class="download-instr">
-										<a href="#"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
+										<a href="../download/JOD.pdf"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
 									</span><br><br>
 									<h5>Назначение.</h5>
 									<p>Средство моющее «Ultramil» марки JOD – специальное плёнкообразующее средство на основе высокомолекулярного соединения йода и PVP, функциональных и увлажняющих добавок, предназначенное для ухода за сосками вымени коров после каждой процедуры доения с целью профилактики мастита, сухости кожных покровов и появления трещин, защиты вымени от заражения и загрязнения. Средство готово к применению. </p>
@@ -308,7 +349,7 @@
 							<span class="tab-cont">
 								<span class="download-instr">
 										<a href="../img/Cert JOD.jpg" download><img src="../img/vniz1.png"/> Скачать СГР</a>
-								</span><br><br>
+								</span><br>
 								<a href="../img/Cert JOD.jpg" data-fancybox="gallery_1">
 									<img src="../img/SGR JOD.png" title="Ultramil JOD" alt="Image unavaliable"/>
 								</a>
@@ -332,7 +373,7 @@
 								</span>
 								<span class="tab-cont">
 								<span class="download-instr">
-										<a href="#"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
+										<a href="../download/Blue.pdf"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
 									</span><br><br>
 									<h5>Назначение:</h5>
 									<p>Средство моющее «Ultramil» марки Blue – готовое к применению плёнкообразующее средство на основе хлоргексидина биглюконата, функциональных и увлажняющих добавок, эмолентов, предназначенное для ухода за сосками вымени коров после каждой процедуры доения с целью профилактики мастита, сухости кожных покровов и появления трещин, защиты вымени от заражения и загрязнения. Средство готово к применению. </p>
@@ -359,7 +400,7 @@
 							<span class="tab-cont">
 								<span class="download-instr">
 										<a href="../img/Cert Blue.jpg" download><img src="../img/vniz1.png"/> Скачать СГР</a>
-								</span><br><br>
+								</span><br>
 								<a href="../img/Cert Blue.jpg" data-fancybox="gallery_1">
 									<img src="../img/SGR Blue.png" title="Ultramil Blue" alt="Image unavaliable"/>
 								</a>
@@ -383,7 +424,7 @@
 								</span>
 								<span class="tab-cont">
 									<span class="download-instr">
-										<a href="#"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
+										<a href="../download/Green.pdf"><img src="../img/vniz1.png"/> Инструкция.pdf</a>
 									</span><br><br>
 									
 									<h5>Назначение:</h5>
@@ -411,7 +452,7 @@
 							<span class="tab-cont">
 								<span class="download-instr">
 										<a href="../img/Cert Green.jpg" download><img src="../img/vniz1.png"/> Скачать СГР</a>
-								</span><br><br>
+								</span><br>
 								<a href="../img/Cert Green.jpg" data-fancybox="gallery_1">
 									<img src="../img/SGR Green.png" title="Ultramil Green" alt="Image unavaliable"/>
 								</a>

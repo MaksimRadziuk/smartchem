@@ -12,6 +12,10 @@ a,p {
 }
 
 
+
+
+/*=========== TOP BUTTON ===========*/
+
 .topbtn {
 	position:fixed;
 	right:40px;
@@ -42,6 +46,13 @@ a,p {
 	line-height: 30px;
 	color:#fff;
 }
+
+/*=========== END TOP BUTTON ===========*/
+
+
+
+/*=========== TOP BAR ===========*/
+
 .top-bar {
 	width:100%;
 	height: 40px;
@@ -148,6 +159,12 @@ a,p {
 	line-height: 28px;
 	margin-left: -3px;
 }
+
+/*=========== END TOP BAR ===========*/
+
+
+/*=========== LOGO ===========*/
+
 .nav-logo {
 	width:90%;
 	max-width: 1280px;
@@ -185,7 +202,7 @@ a,p {
 		transform: rotate(0deg);
 	}
 	100% {
-		transform: rotate(-360deg);
+		transform: rotate(360deg);
 	}
 }
 .text {
@@ -198,6 +215,12 @@ a,p {
 	top:0;
 	left:0;
 }
+
+/*=========== END LOGO ===========*/
+
+
+/*=========== NAVIGATION ===========*/
+
 .nav-bar {
 	display:inline-block;
 	text-align: center;
@@ -251,6 +274,82 @@ a,p {
 	position: relative;
 	transition: all 0.3s linear;
 }
+
+/*=========== END NAVIGATION ===========*/
+
+
+
+
+/*=========== DROP NAVIGATION ===========*/
+
+.drop_menu {
+    display: none;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+.drop_menu:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+.strings {
+	display: inline-block;
+}
+.drop_menu > li {
+    float: left;
+    position: relative;
+}
+.drop_menu > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 37px;
+    left: 5px;
+    z-index: 9;
+    background: #fff;
+}
+ul.submenu > li {
+    display: block;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+ul.submenu > li:hover {
+	color:#0076C1;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color:#676767;
+    text-transform: uppercase;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+ul.drop_menu > li:hover > ul.submenu {
+    display: block;
+}
+.drop_menu li a span {
+	display: block;
+	width:20px;
+	height: 3px;
+	background: #676767;
+	margin-top: 3px;
+}
+/*=========== END DROP NAVIGATION ===========*/
+
+
+
+/*=========== ABOUT COMPANY ===========*/
+
 .content {
 	width:100%;
 }
@@ -274,7 +373,7 @@ a,p {
 	margin-bottom: 10px;
 	display: inline-block;
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 2em;
 	text-transform: uppercase;
 	text-shadow: 0px 0px 4px #000;
 	font-family:Roboto, Open-sans, Arial, sans-serif;
@@ -373,23 +472,31 @@ a,p {
 	text-align: center;
 	margin-top: 10px;
 	line-height: 25px;
-	font-size: 1.1em;
+	font-size: 1em;
 	text-shadow: 0px 0px 5px #000;
 	font-family:Open-sans, Arial, sans-serif;
 }
 .wishes {
 	font-style: italic;
-	font-size: 3em;
+	font-size: 2.5em;
 	color: #00FFFB;
 	text-shadow: 3px 3px 10px #000;
 }
+
+/*=========== END ABOUT COMPANY ===========*/
+
+
+
+/*=========== BLOCK ADVANTAGES ===========*/
+
 .advantages {
 	width: 100%;
 	background: #F0FCFF;
 }
 .advantages .name {
+	margin-top: 40px;
 	text-shadow: none;
-	font-size:2.5em;
+	font-size:2em;
 	color:#3f4c6b;
 	font-family:Roboto, Open-sans, Arial, sans-serif;
 }
@@ -398,23 +505,20 @@ a,p {
 	max-width: 1280px;
 	background: #F0FCFF;
 	margin: 0 auto;
-	padding: 80px 0 40px 0;
 }
-
 .blocks-up {
 	display: inline-block;
 	width:100%;
 	margin: 0 auto;
 	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 40px
+	margin-bottom: 40px;
 }
 .block-advantages {
 	width:17%;
 	min-width: 200px;
 	position: relative;
 	display: inline-block;
-	margin: 10px 5px 0 5px;
+	margin: 10px 5px;
 	background: #fff;
 	overflow: hidden;
 	box-shadow: 5px 9px 9px 3px #3f4c6b;
@@ -484,14 +588,24 @@ a,p {
 	text-align: justify;
 }
 .block-advantages p {
-	padding: 30px 10px 30px 0; 
+	margin: 20px 10px 10px 0; 
 	font-size: 0.9em;
 	width:100%;
 	height:50px;
-	line-height: 15px;
+	line-height: 17px;
 	overflow: hidden;
 }
 
+/*=========== END BLOCK ADVANTAGES =============*/
+
+
+
+/*=========== CONTACTS ===========*/
+
+.footer {
+	background: #458CC0;
+	overflow: hidden;
+}
 .contacts {
 	width:100%;
 	background: #458CC0;
@@ -501,28 +615,32 @@ a,p {
 .contacts-container {
 	width:90%;
 	max-width: 1280px;
-	display:block;
+	display:flex;
 	margin: 0 auto;
+	justify-content: space-between;
 	font-family:Roboto, Open-sans, Arial, sans-serif;
 }
 .info {
 	display: inline-block;
 	width:25%;
 	min-width: 200px;
-	margin: 50px;
+	margin: 50px auto;
 	
 }
 .info h2 {
+	display: block;
 	font-size: 1.1em;
 	margin-bottom: 20px;
 	text-align: left;
 }
 .info p {
+	display: block;
 	color:#ccc;
 	font-size: 0.75em;
 	margin-bottom: 20px;
 }
 .info span {
+	display: block;
 	font-size: 0.9em;
 	color:#fff;
 }
@@ -531,9 +649,9 @@ a,p {
 	width:20%;
 	min-width: 200px;
 	text-align: left;
-	margin:50px;
+	margin:50px auto;
 	font-size: 1em;
-	line-height: 35px;
+	line-height: 33px;
 }
 .email {
 	display:inline-block;
@@ -541,14 +659,13 @@ a,p {
 	min-width: 100px;
 	color:#ccc;
 	font-size: 0.9em;
-	margin-left: 50px;
+	margin: 50px auto;
 }
 .socialnet {
 	width: 10%;
 	min-width: 100px;
 	display: inline-block;
-	margin-left: 50px;
-	align-items: center;
+	margin: 50px auto;
 }
 .socialnet a {
 	display:block;
@@ -561,10 +678,9 @@ a,p {
 	text-decoration: none;
 	color: #fff;
 	text-align: center;
-	margin-bottom: 10px;
 }
 .socialnet a:last-child {
-	margin-bottom: 50px;
+	margin-top:10px;
 }
 .socialnet i {
 	font-size: 32px;
@@ -604,13 +720,19 @@ a,p {
 	text-align: center;
 	
 }
+
+/*=========== END CONTACTS ===========*/
+
+
+
+/*=========== COPYRIGHT ===========*/
 .copyright {
 	display: flex;
 	width:100%;
 	background: #000;
 	height:50px;
 	color:#5B5B5B;
-	font-size: 0.9em;
+	font-size: 0.7em;
 	font-family:Roboto, Open-sans, Arial, sans-serif;
 	vertical-align: middle;
 	overflow: hidden;
@@ -671,9 +793,17 @@ a,p {
 	transition: all 0.5s ease;
 }
 
+/*=========== END COPYRIGHT ===========*/
+
+
+
+
+/*======================== CATALOG =======================*/
+
+/*=========== NAVIGATION BAR ===========*/
 .product-nav {	
-	height:40px;
 	width:100%;
+	max-height: 80px;
 	background: #b3dced; /* Old browsers */
 	background: -moz-linear-gradient(top, #b3dced 0%, #0076c1 35%, #0076c1 73%, #bce0ee 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #b3dced 0%,#0076c1 35%,#0076c1 73%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
@@ -682,9 +812,11 @@ a,p {
 }
 .product-nav-one {
 	display: inline-block;
+	height:40px;
 }
 .product-nav-two {
 	display: inline-block;
+	height:40px;
 }
 .product-nav li {
 	display: inline-block;
@@ -705,13 +837,91 @@ a,p {
 	display: block;
 	transition: all 1s ease;
 }
+.nav_position {
+	width:90%;
+	max-width:1280px;
+	min-width:320px;
+	margin:0 auto;
+}
+/*=========== END NAVIGATION BAR ===========*/
+
+
+/*=========== NAVIGATION BAR PRODUCTS ===========*/
+
+.product_drop_menu {
+	display: none;
+	min-height: 40px;
+	padding: 0;
+    list-style: none;
+    position: relative;
+    width:100%;
+	max-height: 80px;
+	top:-5px;
+	left: 0;
+}
+.product_drop_menu:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+.strings {
+	display: inline-block;
+}
+.product_drop_menu p {
+	display: inline-block;
+	text-transform: uppercase;
+}
+.product_drop_menu > li {
+    float: left;
+    position: relative;
+}
+.product_drop_menu > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.product_drop_menu .submenu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 43px;
+    left: 20px;
+    z-index: 9;
+    background: #fff;
+}
+.product_drop_menu .submenu > li {
+    display: block;
+    padding: 2px 5px;
+    border-bottom: 1px solid #ccc;
+}
+.product_drop_menu > li:hover > ul.submenu {
+    display: block;
+}
+.product_drop_menu > li:hover .strings span{
+	background:#00E50F;
+	transition: all 1s ease;
+}
+.product_drop_menu li a span {
+	display: block;
+	width:20px;
+	height: 3px;
+	background: #fff;
+	margin-top: 3px;
+}
+
+/*=========== END NAVIGATION BAR PRODUCTS ===========*/
+
+
+
+
+/*=========== CATALOG CONTENT ===========*/
+
 .products {
 	width:100%;
 	background: #eee;
 	border-top: solid 5px #32A431;
 }
-
-
 .products-name {
 	width: 80%;
 	display: block;
@@ -735,11 +945,6 @@ a,p {
 	margin: 0 auto;
 	padding: 20px 0;
 }
-.dodoenia h4  {
-	font-size:1.1em;
-}
-
-
 .posledoenia {
 	width:90%;
 	margin: 0 auto;
@@ -770,6 +975,9 @@ a,p {
 	display: inline-block;
 	margin:10px;
 	position: relative;
+}
+.dodoenia-img:hover {
+	filter: brightness(90%);
 }
 .dodoenia-content {
 	display: inline-block;
@@ -853,6 +1061,7 @@ color:#00ACD0;
 	text-align:left;
 	overflow-y: scroll;
 }
+ 		/*======= scroll bar style =======*/
 .tabcss input+label .tab-cont::-webkit-scrollbar {
     width:6px;
 }
@@ -861,7 +1070,6 @@ color:#00ACD0;
     border-color: #777;
     background-color: #ccc;
 }
-
 .tabcss input+label .tab-cont::-webkit-scrollbar-thumb:hover{
     border-width: 1px 1px 1px 2px;
     border-color: #555;
@@ -874,6 +1082,7 @@ color:#00ACD0;
     border-left: solid 1px #aaa;
     background-color: #eee;
 }
+		/*======= end scroll bar style =======*/
 
 .tabcss input:checked+label .tab-cont {
 visibility:visible;
@@ -884,17 +1093,24 @@ background:#fff;
 line-height:15px;
 transition:all 0.5s ease;
 }
+
 .download-instr a {
 	text-decoration: none;
 	color:#7470CC;
 	font-size: 14px;
 }
+.tab-cont img:hover {
+	filter: brightness(80%);
+}
+/*=== FIRST PRODUCT DIVISION NAME===*/
 .dodoenia h4 {
 	width:100%;
 	color:#646464;
 	border-top:solid 3px #00ACD0;
 	line-height: 60px;
+	font-size:1.1em;
 }
+/*=== SECOND PRODUCT DIVISION NAME===*/
 .posledoenia h4{
 	width:100%;
 	color:#646464;
@@ -902,13 +1118,26 @@ transition:all 0.5s ease;
 	line-height: 60px;
 }
 
+/*=========== END CATALOG CONTENT ===========*/
 
+
+
+
+/*======================== CERTIFICATES =============================*/
+/*=========== NAVIGATION BAR CERTIFICATES ===========*/
 #cert-nav {
 	width:90%;
 	max-width:1280px;
 	min-width:320px;
 	margin:0 auto;
 }
+
+/*=========== END NAVIGATION BAR CERTIFICATES ===========*/
+
+
+
+/*=========== CONTENT CERTIFICATES ===========*/
+
 .certif-container {
 	display:block;
 	width:100%;
@@ -1014,6 +1243,24 @@ transition:all 0.5s ease;
 	font-weight:bold;
 	text-decoration: none;
 }
+.iso p a img {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+.sgr p a img {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+
+/*=========== END CONTENT CERTIFICATES ===========*/
+
+
+
+
+
+/*=========== BIG SCREEN ===========*/
 @media screen and (max-width:1243px){
 	.nav-logo {
 		width:100%;
@@ -1039,7 +1286,9 @@ transition:all 0.5s ease;
 	
 }
 
-@media screen and (max-width:900px){
+
+/*=========== MEDIUM SCREEN ===========*/
+@media screen and (max-width:945px){
 	.top-bar {
 		display: none;
 	}
@@ -1053,8 +1302,13 @@ transition:all 0.5s ease;
 		box-shadow: none;
 	}
 	
+	.socialnet {
+		display: none;
+	}
 }
 
+
+/*=========== SMALL SCREEN ===========*/
 @media screen and (max-width:744px){
 	.rotation-container {
 		width:300px;
@@ -1067,12 +1321,35 @@ transition:all 0.5s ease;
 		left:10px;
 	}
 	.nav-bar {
-		margin-bottom: 100px;
+		margin-bottom: 60px;
 	}
 	.about {
-		margin-top:70px;
+		margin-top:30px;
 		width:100%;
 		padding:0;
+	}
+	.name {
+		margin-top: 30px;
+	}
+	.summary {
+		margin: 0 10px;
+		padding-bottom: 30px;
+	}
+	.contacts-container {
+		display: block;
+	}
+	.info {
+		margin: 30px 10px;
+	}
+	.phones {
+		display: block;
+		margin:50px 0 30px 10px;
+		line-height: 16px;
+		font-size: 0.9em;
+	}
+	.email {
+		display: block;
+		margin:50px 0 30px 10px;
 	}
 	.copyright {
 		display: none;
@@ -1085,20 +1362,76 @@ transition:all 0.5s ease;
 	}
 }
 
+@media screen and (max-width:540px) {
+	.product_drop_menu {
+		display: block;
+	}
+	.product-nav-one {
+	display: none;
+	}
+	.product-nav-two {
+	display: none;
+	}
+	#cert-nav {
+		display: none;
+	}
+	.iso span {
+		width: 320px;
+		margin:0 auto;
+		font-size: 1.2em;
+		padding-top: 30px;
+	}
+	.sgr span {
+		width: 320px;
+		margin:0 auto;
+		font-size: 1.2em;
+		padding: 30px 0 15px 0; 
+	}
+	.iso p a {
+		font-size: 0.9em;
+	}
+	.sgr p a {
+		font-size: 0.9em;
+	}
+	
+}
+
+/*=========== PHONES ===========*/
 @media screen and (max-width:463px){
 	
+	.drop_menu {
+		display: block;
+	}
 	.rotation-container {
 		margin-bottom: 30px;
 	}
 	.nav-bar {
 		display: none;
 	}
+	.name {
+		font-size: 1.6em;
+	}
+	.summary {
+		font-size: 0.8em;
+		line-height: 15px;
+	}
+	.wishes {
+		font-size: 1.9em;
+	}
+	.conteiner-advantages .name {
+		font-size: 1.6em;
+	}
+	.ball-contaiber {
+		margin-bottom:0px;
+	}
+	.dodoenia-content {
+		height: 300px;
+	}
 	.dodoenia-container {
 		text-indent:5px;
 	}
 	.img_hid {
 		display:block;
-		
 	}
 	.dodoenia-img {
 		width:0;
@@ -1107,5 +1440,25 @@ transition:all 0.5s ease;
 	.tabcss {
 		width:70%;
 	}
-	
+	.contacts {
+		background: 
+	}
+	.contacts-container {
+		width: 100%;
+		margin-left: 40px;
+	}
+	.info {
+		margin: 30px 10px;
+	}
+	.phones {
+		display: block;
+		margin:0 0 30px 10px;
+		line-height: 16px;
+		font-size: 0.9em;
+	}
+	.email {
+		display: block;
+		margin:0 0 30px 10px;
+	}
+		
 }
