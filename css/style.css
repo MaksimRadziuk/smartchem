@@ -515,7 +515,6 @@ ul.drop_menu > li:hover > ul.submenu {
 	margin-bottom: 40px;
 }
 .block-advantages {
-	width:17%;
 	width: 200px;
 	height: 330px;
 	position: relative;
@@ -748,7 +747,6 @@ ul.drop_menu > li:hover > ul.submenu {
 }
 .copyright-container span {
 	text-transform: uppercase;
-	padding:0 10% 0 0; 
 	line-height: 50px;
 }
 
