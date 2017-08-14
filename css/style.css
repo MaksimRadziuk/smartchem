@@ -516,7 +516,8 @@ ul.drop_menu > li:hover > ul.submenu {
 }
 .block-advantages {
 	width:17%;
-	min-width: 200px;
+	width: 200px;
+	height: 330px;
 	position: relative;
 	display: inline-block;
 	margin: 10px 5px;
