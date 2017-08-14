@@ -133,30 +133,30 @@ a,p {
 	margin-left: 6px;
 	color:#fff;
 }
-.languge {
+.language {
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 14px;
 	float:right;
 	margin-right:30px;
 }
-.languge span{
+.language span{
 	display: inline-block;
 	width:25px;
 	height:25px;
 	border-radius: 50%;
-	margin-top: 8px;
+	margin-top: 6px;
 	transition: all 0.5s ease;
 }
-.languge span:hover {
+.language span:hover {
 	background: #C2C2C2;
 
 }
 
-.languge a {
+.language a {
 	text-decoration: none;
 	color:#fff;
-	line-height: 28px;
+	line-height: 27px;
 	margin-left: -3px;
 }
 
