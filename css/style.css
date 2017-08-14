@@ -1288,7 +1288,7 @@ transition:all 0.5s ease;
 
 
 /*=========== MEDIUM SCREEN ===========*/
-@media screen and (max-width:945px){
+@media screen and (max-width:1115px){
 	.top-bar {
 		display: none;
 	}
