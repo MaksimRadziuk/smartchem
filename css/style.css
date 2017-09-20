@@ -227,27 +227,38 @@ a,p {
 	position: relative;
 	width: 60%;
 	height: 50px;
-	margin-top: 80px;
-	margin-bottom: 80px;
+	margin-top: 40px;
+	margin-bottom: 100px;
 }
-.nav-bar ul {
-	display: inline-block;
+
+.first-nav-bar {
+	width: 400px;
+	display: block;
 	border-bottom: solid 2px #0076C1;
 	border-top: solid 2px #0076C1;
 	}
+
+.second-nav-bar {
+	margin-top: 20px;
+	width: 400px;
+	display: block;
+	border-bottom: solid 2px #32A431;
+	border-top: solid 2px #32A431;
+}
+
 .nav-bar li {
 	text-transform: uppercase;
 	height: 50px;
 	display: inline-block;
 	line-height: 50px;
-	margin-left: 15px;
+	margin-left: 25px;
 	border-radius: 5px;
 	font-size: 0.9em;
 	letter-spacing: 0.5px;
 
 }
 .nav-bar li:last-child {
-	margin-right:15px;
+	margin-right:25px;
 }
 .nav-bar li:hover a{	
 	color: #00ACD0;
@@ -268,6 +279,27 @@ a,p {
 	height:2px;
 	opacity:0;
 	background:#00ACD0;
+	border-radius: 1px;
+	display: block;
+	top: 0px;
+	position: relative;
+	transition: all 0.3s linear;
+}
+.second-nav-bar li:hover a{	
+	color: #32A431;
+	border-radius: 3px;
+}
+.second-nav-bar a {
+	text-decoration: none;
+	color: #676767;
+	font-weight: 600;
+	transition: color 0.5s linear;
+}
+.second-nav-bar span {
+	width:auto;
+	height:2px;
+	opacity:0;
+	background:#32A431;
 	border-radius: 1px;
 	display: block;
 	top: 0px;
@@ -1275,6 +1307,12 @@ transition:all 0.5s ease;
 	.nav-bar {
 		margin: 40px auto 50px auto;
 		width:100%;
+	}
+	.first-nav-bar {
+		margin: 0 auto;
+	}
+	.second-nav-bar {
+		margin: 20 auto;
 	}
 	.products-container {
 		width: 100%;
