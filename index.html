@@ -6,82 +6,73 @@
 <meta name="keywords" content="моющие средства обработка вымени дезинфекция преддоильная последоильная"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<!--[if lt IE 9]> 
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<![endif]-->
 <link rel="shortcut icon" href="img/1491358713_globe.png" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700;Roboto:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/fonts/font-awesome.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/animation.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
 </head>
 
 <body>
 	<div class="topbtn">
-		<a href="javascript://0" onclick="slowScroll('#top')"><i class="fa fa-chevron-up" aria-hidden="true"></i>вверх</a>
+		<a href="javascript://0" id="toTop"><i class="fa fa-chevron-up" aria-hidden="true"></i>вверх</a>
 	</div>
-	<div class="top-bar" id="top">
-		<div class="top-bar-phone" title="Телефон">
-			<p>+375 152 684250</p>
+	<div class="popup-bcg"></div>
+	<header>
+		<div class="top-bar" id="top">
+			<div class="top-bar-phone" title="Телефон">
+				<a href="tel:+375152684250" class="phone">+375 152 684250</a>
+			</div>
+			<div class="top-bar-mail" title="Электронная почта">
+				<a href="mailto:smartchem@tut.by" class="mail">smartchem@tut.by</a>
+			</div>
+			<div class="top-bar-skype" title="Skype">
+				<i class="fa fa-skype" aria-hidden="true"></i>
+				<a href="skype:smartchem" class="skype">: smartchem</a>
+			</div>
+			<div class="top-bar-social">
+				<a href="https://vk.com/molokosmart" class="vk" title="ВКонтакте" target="_blank" style="animation-delay:1.2s">
+					<i class="fa fa-vk" aria-hidden="true"></i>
+				</a>
+							
+				<a href="https://www.linkedin.com/company-beta/18083246" class="linkedin" title="LinkedIn" target="_blank">
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div class="top-bar-time" title="Время работы">
+				<p>Пн-Пт, 8:30-17:00</p>
+			</div>
+			<div class="language" title="Выберите язык сайта">
+					<span><a href="#" class="rus">ru</a></span>
+					<span><a href="en/index.html" class="uk">en</a></span>
+					<span><a href="by/index.html" class="bel">by</a></span>
+			</div>
 		</div>
-		<div class="top-bar-mail" title="Электронная почта">
-			<p>smartchem@tut.by</p>
+		<div class="lang">
+			
 		</div>
-		<div class="top-bar-skype" title="Skype">
-			<i class="fa fa-skype" aria-hidden="true"></i>
-			<p>: smartchem</p>
+		<div class="nav-logo">
+			<div class="rotation-container" title="ООО СмартХим">
+				<div class="circle"></div>
+				<div class="text"></div>
+			</div>
+			<nav class="nav-bar">
+				<ul class="first-nav-bar">
+					<li><p id="toAdvan" title="Преимущества">Преимущества<span></span></p></li>
+					<li><p id="toCatalog" title="Каталог продукции">Продукция<span></span></p></li>
+					<li><p id="toCertif" title="Сертификаты">Сертификаты<span></span></p></li>
+					<li><p id="toContact" title="Контакты">Контакты<span></span></p></li>
+				</ul>
+			</nav>
 		</div>
-		<div class="top-bar-social">
-			<a href="https://vk.com/molokosmart" class="vk" title="ВКонтакте" target="_blank" style="animation-delay:1.2s">
-				<i class="fa fa-vk" aria-hidden="true"></i>
-			</a>
-						
-			<a href="https://www.linkedin.com/company-beta/18083246" class="linkedin" title="LinkedIn" target="_blank">
-				<i class="fa fa-linkedin" aria-hidden="true"></i>
-			</a>
-		</div>
-		<div class="top-bar-time" title="Время работы">
-			<p>Пн-Пт, 8:30-17:00</p>
-		</div>
-		<div class="language" title="Выберите язык сайта">
-				<span><a href="#">ru</a></span>
-				<span><a href="en/index.html">en</a></span>
-				<span><a href="by/index.html">by</a></span>
-		</div>
-	</div>
-	<ul class="drop_menu">
-	    <li>
-		    <a href="#">
-			    <div class="strings">
-				    <span></span>
-				    <span></span>
-				    <span></span>
-			    </div>
-		    </a>
-	        <ul class="submenu">
-	            <li><a href="../index.html" title="На главную">Главная</a></li>
-				<li><a href="../index.html" title="Преимущества">Преимущества</a></li>
-				<li title="Каталог"><a href="ru/catalog.html">Каталог продукции</a></li>
-				<li><a href="ru/certif.html" title="Сертификаты">Сертификаты</a></li>
-				<li><a href="javascript://0" onclick="slowScroll('#contact')" title="Контакты">Контакты</a></li>
-	        </ul>
-	    </li>
-	</ul>
-	<div class="nav-logo">
-		<div class="rotation-container" title="ООО СмартХим">
-			<div class="circle"></div>
-			<div class="text"></div>
-		</div>
-		<div class="nav-bar">
-			<ul class="first-nav-bar">
-				<li><a href="#" title="На главную">Главная<span></span></a></li>
-				<li><a href="javascript://0" onclick="slowScroll('#advan')" title="Преимущества">Преимущества<span></span></a></li>
-				<li><a href="javascript://0" onclick="slowScroll('#contact')" title="Контакты">Контакты<span></span></a></li>
-			</ul>
-			<ul class="second-nav-bar">
-				<li><a href="ru/catalog.html" title="Каталог продукции">Каталог продукции<span></span></a></li>
-				<li><a href="ru/certif.html" title="Сертификаты">Сертификаты<span></span></a></li>
-			</ul>
-		</div>
-	</div>
-	<div clas="content">
+	</header>
+	
+	<section clas="content">
 		<div class="conteiner-about">
 			<div class="about" title="О компании">
 				<span class="name">О нашей компании
@@ -95,14 +86,14 @@
 					<span class="medium"></span>
 					<span class="small"></span>
 				</div>
-				<div class="summary">ООО «СмартХим» - это производитель и разработчик  химических продуктов,<br/> моющих и дезинфицирующих средств для различных секторов экономики.<br/>
-ООО «СмартХим» работает по европейским стандартам качества, использует в своей деятельности<br/> лучшие мировые научные достижения.<br/> Наша компания постоянно развивается и растет.<br/> Мы предоставляем широкий спектр услуг обеспечивающий прекрасный<br/> результат и Ваш успех.<br/><br/> 
-<span class="wishes">Желаем вам хорошего дня!</span>
+				<div class="summary"><h1>ООО «СмартХим»</h1> - это производитель и разработчик  химических продуктов,<br/> моющих и дезинфицирующих средств для различных секторов экономики.<br/>ООО «СмартХим» работает по европейским стандартам качества, использует в своей деятельности<br/> лучшие мировые научные достижения.<br/> Наша компания постоянно развивается и растет.<br/> Мы предоставляем широкий спектр услуг обеспечивающий прекрасный<br/> результат и Ваш успех.<br/><br/>
+					<span class="wishes">Желаем вам хорошего дня!</span>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="advantages" id="advan">
+	</section>
+
+	<section class="advantages" id="advan">
 		<div class="conteiner-advantages" title="Преимущества компании">
 		<span class="name">Наши преимущества</span>
 			<div class="ball-container">
@@ -117,40 +108,384 @@
 			<div class="blocks-up">
 				<div class="block-advantages">
 					<div class="advantages-plant"></div>
-					<i class="fa fa-industry" aria-hidden="true"></i>
-					<h1>Производственная база</h1>
+					<div class="title">
+						<i class="fa fa-industry" aria-hidden="true"></i>
+						<p class="adv-title">Производственная база</p>
+					</div>
 					<p>Собственное производство<br>Контрактное производство</p>
 				</div>
 				<div class="block-advantages">
 					<div class="advantages-producing"></div>
-					<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-					<h1>Высокое качество</h1>
+					<div class="title">
+						<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+						<p class="adv-title">Высокое качество</p>
+					</div>
 					<p>Система менеджмента качества ИСО 9001</p>
 				</div>
 				<div class="block-advantages">
 					<div class="advantages-prices"></div>
-					<i class="fa fa-bar-chart" aria-hidden="true"></i>
-					<h1>Выгодные условия</h1>
+					<div class="title">
+						<i class="fa fa-bar-chart" aria-hidden="true"></i>
+						<p class="adv-title">Выгодные условия</p>
+					</div>
 					<p>Гибкое ценообразование <br>Удобная логистика</p>
 				</div>
 				<div class="block-advantages">
 					<div class="advantages-problem"></div>
-					<i class="fa fa-question" aria-hidden="true"></i>
-					<h1>Решение задач</h1>
+					<div class="title">
+						<i class="fa fa-question" aria-hidden="true"></i>
+						<p class="adv-title">Решение задач</p>
+					</div>
 					<p>Инновационные решения нестандартных задач</p>
 				</div>
 				<div class="block-advantages">
 					<div class="advantages-help"></div>
-					<i class="fa fa-handshake-o" aria-hidden="true"></i>
-					<h1>Поддержка клиентов</h1>
+					<div class="title">
+						<i class="fa fa-handshake-o" aria-hidden="true"></i>
+						<p class="adv-title">Поддержка клиентов</p>
+					</div>
 					<p>Клиентская программа "Плечо"<br><br></p>
 				</div>
 				<div class="100"></div>
 			</div>
 		</div>
-	</div>
+	</section>
+
+	<section class="products" id="catalog">
+		<div class="products-container">
+		<span class="products-name">Продукция</span>
+			
+			<div class="dodoenia">
+				<h4>Средства для обработки до доения</h4>
+				<ul class="tabs-products">
+					<li class="active" id="toPre">Ultramil Pre</li>
+					<li id="toFoam">Ultramil Foam</li>
+					<li id="toBefore">Ultramil Before</li>
+				</ul>
+				<div class="dodoenia-container active" id="pre">
+					<h2>Ultramil Pre <a class="img_hid" href="img/large/Pre.png">показать этикетку</a></h2>
+					<div class="dodoenia-img">
+						<a data-fancybox="gallery" href="img/large/Pre.jpg" title="Ultramil Pre">
+							<img src="img/small/Pre.png">
+						</a>					
+					</div>
+					<div class="dodoenia-content" >
+						<div class="tabcss">
+							<input type="radio" id="tab1" name="tabs" checked/>
+							<label for="tab1">
+								<span class="title1">Описание
+								</span>
+								<span class="tab-cont">
+									<span class="download-instr">
+										<a href="download/Pre.pdf" download><img src="img/icons/vniz1.png"/> Инструкция.pdf</a>
+									</span><br><br>
+									<h5>Назначение:</h5>
+									<p>Средство моющее «Ultramil» Pre – высококонцентрированное средство на основе молочной кислоты, мягких ПАВ и глицерина, предназначенное для обработки вымени перед доением с целью удаления загрязнений с поверхности кожи, основания вымени и сосков, контактирующих в дальнейшем, в процессе доения коров, с сосковой резиной. Рекомендуется для регулярной санитарной обработки сосков вымени перед надеванием на них стаканов доильного аппарата.</p><br>
+
+									<h5>Способы применения:</h5>
+									<p>Средство может использоваться в виде спрея для очистки вымени, в виде раствора для замачивания салфеток, а также для пенной обработки вымени с помощью пенообразующего стаканчика.</p>
+
+									<p>1. Средство используется в виде спрея: 1-2% раствор разбрызгивается на соски, затем насухо протирается мягкой салфеткой. Одно вымя вытирается одной салфеткой.<br>
+									2. Вымя обрабатывается специальной салфеткой, смоченной в 0,5-1% рабочем растворе. Салфетки многоразового использования, после применения замачиваются в 1% растворе средства «Ultramil» марки Pre в течение 1 часа, ополаскиваются и сушатся.<br>
+									3. С помощью специального пенообразующего стаканчика, используя 3-5% раствор, получают активную густую пену, в которой соски могут быть вымыты путем погружения в пену на короткое время. После обработки вымя вытирается насухо мягкой салфеткой. Одно вымя вытирается одной салфеткой.</p><br>
+
+									<h5>Преимущества:</h5>
+									<p>- экономичность в использовании (средство является высококонцентрированным продуктом); <br>
+									- обладает прекрасным очищающим действием;<br>
+									- увлажняет, смягчает и обеззараживает кожу вымени;<br>
+									- снижает риск заболевания маститом;<br>
+									- способствует заживлению мелких ран, трещин на коже вымени и сосков;<br>
+									- снижает риск травмирования соска во время дойки;<br>
+									- не оказывает раздражающего воздействия.<br><br>
+
+									Для достижения наилучшего эффекта рекомендуем использовать средство для обработки вымени после доения Ultramil марок Green (на основе молочной кислоты), Blue (на основе хлоргексидин биглюконата) или JOD (на основе полимерного комплекса йода).</p><br>
+									<h5>Фасовка:</h5>
+									<p>- канистра 10л, 20л.<br>
+									- еврокуб.<br>
+									- налив в тару покупателя.
+									</p>
+									
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="dodoenia-container" id="foam">
+					<h2>Ultramil Foam <a class="img_hid" href="img/large/Foam.png">показать этикетку</a></h2>
+					<div class="dodoenia-img">
+						<a data-fancybox="gallery" href="img/large/Foam.jpg" title="Ultramil Foam">
+							<img src="img/small/Foam.png">
+						</a>
+					</div>
+					<div class="dodoenia-content" >
+						<div class="tabcss">
+							<input type="radio" id="tab3" name="tabs3" checked/>
+							<label for="tab3">
+								<span class="title1">Описание
+								</span>
+								<span class="tab-cont">
+								<span class="download-instr">
+										<a href="download/Foam.pdf" download><img src="img/icons/vniz1.png"/> Инструкция.pdf</a>
+									</span><br><br>
+									<h5>Назначение:</h5>
+									<p>Средство моющее «Ultramil» марки Foam – готовое к применению средство на основе хлоргексидина биглюконата, мягких ПАВ, эмолентов и глицерина, предназначенное для обработки вымени перед доением с целью удаления загрязнений с поверхности кожи, основания вымени и сосков, контактирующих в дальнейшем, в процессе доения коров, с сосковой резиной. Рекомендуется для регулярной санитарной обработки сосков вымени перед надеванием на них стаканов доильного аппарата.</p>
+
+									<h5>Способы применения: </h5>
+									<p>Средство поставляется в готовом к применению виде. Средство может использоваться в виде спрея для очистки вымени, в виде раствора для замачивания салфеток, а также для пенной обработки вымени с помощью пенообразующего стаканчика.<br>
+
+									1. Использование в виде спрея: средство разбрызгивается на соски, затем протирается мягкой салфеткой. Одно вымя вытирается одной салфеткой.<br>
+									2. Вымя обрабатывается специальной салфеткой, смоченной в средстве. <br>
+									3. С помощью специального пенообразующего стаканчика получают активную густую пену, в которой соски могут быть вымыты путем погружения в пену на короткое время (10-15 секунд). После обработки вымя вытирается насухо мягкой салфеткой. Одно вымя вытирается одной салфеткой.</p>
+
+									<h5>Преимущества:</h5>
+									<p>- готовая к применению форма; <br>
+									- обладает прекрасным очищающим действием;<br>
+									- увлажняет, смягчает и обеззараживает кожу вымени;<br>
+									- снижает риск заболевания маститом;<br>
+									- способствует заживлению мелких ран, трещин на коже вымени и сосков;<br>
+									- снижает риск травмирования соска во время дойки;<br>
+									- не оказывает раздражающего воздействия.<br>
+
+									Для достижения наилучшего эффекта рекомендуем использовать средство для обработки вымени после доения Ultramil марок Green (на основе молочной кислоты), Blue (на основе хлоргексидин биглюконата) или JOD (на основе полимерного комплекса йода).
+									</p>
+									<h5>Фасовка:</h5>
+									<p>- канистра 10л, 20л.<br>
+									- еврокуб.<br>
+									- налив в тару покупателя.
+									</p>							
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="dodoenia-container" id="before">
+					<h2>Ultramil Before <a class="img_hid" href="img/large/Before.png">показать этикетку</a></h2>
+					<div class="dodoenia-img">
+						<a data-fancybox="gallery" href="img/large/Before.jpg" title="Ultramil Before">
+							<img src="img/small/Before.png">
+						</a>
+					</div>
+					<div class="dodoenia-content" >
+						<div class="tabcss">
+							<input type="radio" id="tab11" name="tabs11" checked/>
+							<label for="tab11">
+								<span class="title1">Описание
+								</span>
+								<span class="tab-cont">
+								<span class="download-instr">
+										<a href="download/Before.pdf" download><img src="img/icons/vniz1.png"/> Инструкция.pdf</a>
+									</span><br><br>
+									<h5>Назначение:</h5>
+									<p>Средство моющее «Ultramil» марки Before – концентрированное средство на основе хлоргексидина биглюконата, мягких ПАВ, эмолентов и глицерина, предназначенное для обработки вымени перед доением с целью удаления загрязнений с поверхности кожи, основания вымени и сосков, контактирующих в дальнейшем, в процессе доения коров, с сосковой резиной. Рекомендуется для регулярной санитарной обработки сосков вымени перед надеванием на них стаканов доильного аппарата.</p>
+									<h5>Способы применения:</h5> 
+									<p>Средство может использоваться в виде спрея для очистки вымени, в виде раствора для замачивания салфеток, а также для пенной обработки вымени с помощью пенообразующего стаканчика.<br>
+
+									1. Средство используется в виде спрея: 1-2% раствор разбрызгивается на соски, затем протирается мягкой салфеткой. Одно вымя вытирается одной салфеткой.<br>
+									2. Вымя обрабатывается специальной салфеткой, смоченной в 0,5-1% рабочем растворе. Салфетки многоразового использования, после применения замачиваются в 1% растворе средства «Ultramil» марки Before в течение 1 часа, ополаскиваются и сушатся.<br>
+									3. С помощью специального пенообразующего стаканчика, используя 20% раствор, получают активную густую пену, в которой соски могут быть вымыты путем погружения в пену на короткое время (10-15 секунд). После обработки вымя вытирается насухо мягкой салфеткой. Одно вымя вытирается одной салфеткой.</p>
+
+									<h5>Преимущества:</h5>
+									<p>- экономичность в использовании (средство является концентрированным продуктом); <br>
+									- обладает прекрасным очищающим действием;<br>
+									- увлажняет, смягчает и обеззараживает кожу вымени;<br>
+									- снижает риск заболевания маститом;<br>
+									- способствует заживлению мелких ран, трещин на коже вымени и сосков;<br>
+									- снижает риск травмирования соска во время дойки;<br>
+									- не оказывает раздражающего воздействия.<br><br>
+
+									Для достижения наилучшего эффекта рекомендуем использовать средство для обработки вымени после доения Ultramil марок Green (на основе молочной кислоты), Blue (на основе хлоргексидин биглюконата) или JOD (на основе полимерного комплекса йода).</p>
+
+									<h5>Фасовка:</h5>
+									<p>- канистра 10л, 20л.<br>
+									- еврокуб,<br>
+									- налив в тару покупателя.
+									</p>
+									
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="posledoenia">
+				<h4>Средства для обработки после доения</h4>
+				<ul class="tabs-products">
+					<li class="active" id="toJod">Ultramil JOD</li>
+					<li id="toBlue">Ultramil Blue</li>
+					<li id="toGreen">Ultramil Green</li>
+				</ul>
+				<div class="dodoenia-container active" id="jod">
+					<h2>Ultramil JOD <a class="img_hid" href="img/large/JOD.png">показать этикетку</a></h2>
+					<div class="dodoenia-img">
+					<a data-fancybox="gallery" href="img/large/JOD.jpg" title="Ultramil JOD">
+						<img src="img/small/JOD.png">
+						</a>
+					</div>
+					<div class="dodoenia-content">
+						<div class="tabcss">
+							<input type="radio" id="tab5" name="tabs5" checked/>
+							<label for="tab5">
+								<span class="title1">Описание
+								</span>
+								<span class="tab-cont">
+								<span class="download-instr">
+										<a href="download/JOD.pdf" download><img src="img/icons/vniz1.png"/> Инструкция.pdf</a>
+									</span><br><br>
+									<h5>Назначение.</h5>
+									<p>Средство моющее «Ultramil» марки JOD – специальное плёнкообразующее средство на основе высокомолекулярного соединения йода и PVP, функциональных и увлажняющих добавок, предназначенное для ухода за сосками вымени коров после каждой процедуры доения с целью профилактики мастита, сухости кожных покровов и появления трещин, защиты вымени от заражения и загрязнения. Средство готово к применению. </p>
+
+									<h5>Способы применения: </h5>
+									<p>Готовое к применению средство наносить сразу после доения. Всегда использовать чистую ёмкость для окунания сосков. Наполнить ёмкость до 3/4 объема, окунуть каждый сосок. НЕ ВЫТИРАТЬ. Защитная плёнка с соска удаляется непосредственно перед следующим доением с помощью воды либо моющего раствора средства «Ultramil» марки Pre и салфетки.</p> 
+
+									<h5>Преимущества:</h5>
+									<p>Предназначено для регулярной защиты от мастита и обеспечения идеального состояния сосков. Оказывает дезинфицирующее воздействие за счет содержания йода в составе комплекса. Отлично увлажняет кожу соска, не раздражает кожу вымени, надёжно защищает вымя от заражения и загрязнения, формирует видимую до следующего доения защитную плёнку на пути природных бактерий, присутствующих в твердой и жидкой грязи. Не стекает с поверхности кожи. Длительное антисептическое действие. <br>
+
+									Для достижения наилучшего эффекта рекомендуем использовать средство для обработки вымени перед доением «Ultramil» марок Pre (на основе молочной кислоты), Foam или Before (на основе хлоргексидина биглюконата).
+									</p>
+									<h5>Фасовка:</h5>
+									<p>- канистра 10л, 20л.<br>
+									- еврокуб,<br>
+									- налив в тару покупателя.
+									</p>							
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="dodoenia-container" id="blue">
+					<h2>Ultramil Blue <a class="img_hid" href="img/large/Blue.png">показать этикетку</a></h2>
+					<div class="dodoenia-img">
+						<a data-fancybox="gallery" href="img/large/Blue.jpg" title="Ultramil Blue">
+							<img src="img/small/Blue.png">
+						</a>
+					</div>
+					<div class="dodoenia-content">
+						<div class="tabcss">
+							<input type="radio" id="tab7" name="tabs7" checked/>
+							<label for="tab7">
+								<span class="title1">Описание
+								</span>
+								<span class="tab-cont">
+								<span class="download-instr">
+										<a href="download/Blue.pdf" download><img src="img/icons/vniz1.png"/> Инструкция.pdf</a>
+									</span><br><br>
+									<h5>Назначение:</h5>
+									<p>Средство моющее «Ultramil» марки Blue – готовое к применению плёнкообразующее средство на основе хлоргексидина биглюконата, функциональных и увлажняющих добавок, эмолентов, предназначенное для ухода за сосками вымени коров после каждой процедуры доения с целью профилактики мастита, сухости кожных покровов и появления трещин, защиты вымени от заражения и загрязнения. Средство готово к применению. </p>
+
+									<h5>Способы применения: </h5>
+									<p>Готовое к применению средство наносить сразу после доения. Всегда использовать чистую ёмкость для окунания сосков. Наполнить ёмкость до 3/4 объема, окунуть каждый сосок.               НЕ ВЫТИРАТЬ. Защитная плёнка с соска удаляется непосредственно перед следующим доением с помощью воды либо моющего раствора средства «Ultramil» марок Pre, Foam или Before и салфетки. </p>
+
+									<h5>Преимущества:</h5>
+									<p>Предназначено для регулярной защиты от мастита и обеспечения идеального состояния сосков. Оказывает дезинфицирующее воздействие за счет содержания хлоргексидина биглюконата. и антибактериальных компонентов. Отлично увлажняет кожу соска, не раздражает кожу вымени, надёжно защищает вымя от заражения и загрязнения, формирует видимую до следующего доения защитную плёнку на пути природных бактерий, присутствующих в твердой и жидкой грязи. Не стекает с поверхности кожи. Длительное антисептическое действие. <br>
+
+									Для достижения наилучшего эффекта рекомендуем использовать средство для обработки вымени перед доением «Ultramil» марок Pre (на основе молочной кислоты), Foam или Before (на основе хлоргексидина биглюконата).
+									</p>
+									<h5>Фасовка:</h5>
+									<p>- канистра 10л, 20л.<br>
+									- еврокуб,<br>
+									- налив в тару покупателя.
+									</p>			
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="dodoenia-container" id="green">
+					<h2>Ultramil Green <a class="img_hid" href="img/large/Green.png">показать этикетку</a></h2>
+					<div class="dodoenia-img">
+						<a data-fancybox="gallery" href="img/large/Green.jpg" title="Ultramil Green">
+							<img src="img/small/Green.png">
+						</a>
+					</div>
+					<div class="dodoenia-content">
+						<div class="tabcss">
+							<input type="radio" id="tab9" name="tabs9" checked/>
+							<label for="tab9">
+								<span class="title1">Описание
+								</span>
+								<span class="tab-cont">
+									<span class="download-instr">
+										<a href="download/Green.pdf" download><img src="img/icons/vniz1.png"/> Инструкция.pdf</a>
+									</span><br><br>
+									
+									<h5>Назначение:</h5>
+									<p>Средство моющее «Ultramil» марки Green – готовое к применению плёнкообразующее средство на основе молочной кислоты, функциональных и увлажняющих добавок, предназначенное для ухода за сосками вымени коров после каждой процедуры доения с целью профилактики мастита, сухости кожных покровов и появления трещин, защиты вымени от заражения и загрязнения. Средство готово к применению.</p>
+
+									<h5>Способы применения: </h5>
+									<p>Готовое к применению средство наносить сразу после доения. Всегда использовать чистую ёмкость для окунания сосков. Наполнить ёмкость до 3/4 объема, окунуть каждый сосок. НЕ ВЫТИРАТЬ. Защитная плёнка с соска удаляется непосредственно перед следующим доением с помощью воды либо моющего раствора средства «Ultramil» марки Pre и салфетки. </p>
+
+									<h5>Преимущества:</h5>
+									<p>Предназначено для регулярной защиты от мастита и обеспечения идеального состояния сосков. Оказывает дезинфицирующее воздействие за счет содержания молочной кислоты и антибактериальных компонентов. Отлично увлажняет кожу соска, не раздражает кожу вымени, надёжно защищает вымя от заражения и загрязнения, формирует видимую до следующего доения защитную плёнку на пути природных бактерий, присутствующих в твердой и жидкой грязи. Не стекает с поверхности кожи. Длительное антисептическое действие.<br> 
+
+									Для достижения наилучшего эффекта рекомендуем использовать средство для обработки вымени перед доением «Ultramil» марок Pre (на основе молочной кислоты), Foam или Before (на основе хлоргексидина биглюконата).
+									</p>
+									<h5>Фасовка:</h5>
+									<p>- канистра 10л, 20л.<br>
+									- еврокуб,<br>
+									- налив в тару покупателя.
+									</p>			
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="certif-container" id="certif">
+		<div class="certif-block">
+			<div  class="iso" id="iso">
+				<span>Сертификат соответствия системы менеджмента качества</span>
+				<a data-fancybox="gallery_2" href="img/large/ISO.png" title="Сертфикат ИСО">
+					<img src="img/small/ISOsmall.png">
+				</a>
+				<p><a href="img/large/ISO.png" download><img src="img/icons/vniz1.png"/>Cвидетельство ИСО</a></p>
+			</div>
+			<div class="sgr">
+				<span>Cвидетельство государственной регистрации</span>
+				<div class="sgr-block">
+					<a data-fancybox="gallery_2" href="img/large/Cert Pre.jpg" title="СГР Ultramil Pre">
+						<img src="img/small/SGR Pre.png" id="Pre">
+						<p><a href="img/large/Cert Pre.jpg" download><img src="img/icons/vniz1.png"/>Ultramil Pre</a></p>
+					</a>
+				</div>
+				<div class="sgr-block">
+					<a data-fancybox="gallery_2" href="img/large/Cert Foam.jpg" title="СГР Ultramil Foam">
+						<img src="img/small/SGR Foam.png" id="Foam">
+						<p><a href="img/large/Cert Foam.jpg" download><img src="img/icons/vniz1.png"/>Ultramil Foam</a></p>
+					</a>
+				</div>
+				<div class="sgr-block">
+					<a data-fancybox="gallery_2" href="img/large/Cert Before.jpg" title="СГР Ultramil Before">
+						<img src="img/small/SGR Before.png" id="Before">
+						<p><a href="img/large/Cert Before.jpg" download><img src="img/icons/vniz1.png"/>Ultramil Before</a></p>
+					</a>
+				</div>
+				<div class="sgr-block">
+					<a data-fancybox="gallery_2" href="img/large/Cert JOD.jpg" title="СГР Ultramil JOD">
+						<img src="img/small/SGR JOD.png" id="JOD">
+						<p><a href="img/large/Cert JOD.jpg" download><img src="img/icons/vniz1.png"/>Ultramil JOD</a></p>
+					</a>
+				</div>
+				<div class="sgr-block">
+					<a data-fancybox="gallery_2" href="img/large/Cert Blue.jpg" title="СГР Ultramil Blue">
+						<img src="img/small/SGR Blue.png" id="Blue">
+						<p><a href="img/large/Cert Blue.jpg" download><img src="img/icons/vniz1.png"/>Ultramil Blue</a></p>
+					</a>
+				</div>
+				<div class="sgr-block">
+					<a data-fancybox="gallery_2" href="img/large/Cert Green.jpg" title="СГР Ultramil Green">
+						<img src="img/small/SGR Green.png" id="Green">
+						<p><a href="img/large/Cert Green.jpg" download><img src="img/icons/vniz1.png"/>Ultramil Green</a></p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 	
-	<div class="footer">
+	<footer class="footer">
 		<div class="contacts" title="Контакты" id="contact">
 			<div class="contacts-container">
 				<div class="info" title="О нас">
@@ -180,27 +515,20 @@
 		</div>
 		<div class="copyright">
 			<div class="copyright-container">
-				<span>&copy; All rights recieved</span>
-			</div>
-			<div class="copyright-madeby">
-				<div class="madeby">Developed by <a href="https://www.linkedin.com/in/maksim-radziuk-469b99138" target="_blank" title="Информация разработчика">Maksim Radziuk</a>
+				<span>&copy; All rights reserved</span>
+				<div class="copyright-madeby">
+					<div class="madeby">Developed by <a href="https://www.linkedin.com/in/maksim-radziuk-469b99138" target="_blank" title="Информация разработчика">Maksim Radziuk</a>
+					</div>
+					<div class="social-dev"><a href="https://www.linkedin.com/in/maksim-radziuk-469b99138" target="_blank" title="LinkedIn разработчика"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div>
 				</div>
-				<div class="social-dev"><a href="https://www.linkedin.com/in/maksim-radziuk-469b99138" target="_blank" title="LinkedIn разработчика"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-				</div>
 			</div>
-			
 		</div>
-	</div>
+	</footer>
+
 	<script src="js/jquery-3.2.1.js" charset="utf-8"></script>
-	<script>
-	  function slowScroll (id) {
-		var offset = 0;
-		$('html, body').animate ({
-		  scrollTop: $(id).offset ().top - offset
-		}, 500);
-		return false;
-	  }
-	</script>
+	<script src="js/main.js"></script>
+
   
 	</body>
 </html>
