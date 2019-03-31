@@ -55,5 +55,31 @@ $(document).ready(function() {
         $('#green').addClass('active');
     });
 
-    
+    var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        // when window width is <= 900px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          slidesPerGroup: 1,
+        },
+        // when window width is <= 900px
+        900: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 20
+        }
+      }
+    })
+
 });
