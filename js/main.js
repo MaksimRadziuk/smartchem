@@ -1,21 +1,26 @@
 $(document).ready(function() {
 
 /*SLOWSCROLL*/
-    $('#toAdvan').click(function(){
-        $('body, html').animate({scrollTop:$('#advan').position().top}, 200);
+    $(function(){
+      $.fn.scrollToTop=function(){
+        $(this).hide().removeAttr("href");
+        if($(window).scrollTop()!="0"){
+            $(this).fadeIn("slow")
+      }
+      var scrollDiv=$(this);
+      $(window).scroll(function(){
+        if($(window).scrollTop()<="500"){
+        $(scrollDiv).fadeOut("slow")
+        }else{
+        $(scrollDiv).fadeIn("slow")
+      }
+      });
+        $(this).click(function(){
+          $("html, body").animate({scrollTop:0},"slow")
+        })
+      }
     });
-    $('#toCatalog').click(function(){
-        $('body, html').animate({scrollTop:$('#catalog').position().top}, 300);
-    });
-    $('#toCertif').click(function(){
-        $('body, html').animate({scrollTop:$('#certif').position().top}, 400);
-    });
-    $('#toContact').click(function(){
-        $('body, html').animate({scrollTop:$('#contact').position().top}, 500);
-    });
-    $('#toTop').click(function(){
-        $('body, html').animate({scrollTop:$('#top').position().top}, 500);
-    });
+    $(function() {$(".topbtn").scrollToTop();});
 
 /*PRODUCT'S TABS*/
     $('#toPre').click(function(){
@@ -67,7 +72,6 @@ $(document).ready(function() {
         clickable: true,
       },
       breakpoints: {
-        // when window width is <= 900px
         480: {
           slidesPerView: 1,
           spaceBetween: 20,
